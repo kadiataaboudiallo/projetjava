@@ -1,0 +1,43 @@
+          
+1. dessinez une arborescence cohérente pour ces classes 
+
+
+                 Personne
+                /        \ 
+        Etudiant        Travailleur
+        /  \                    |
+  EtudiantTravailleur           Enseignant
+        |
+     EtudiantSportif
+   
+
+Justification :
+Classe Personne :
+La classe de base qui contient des informations communes à toutes les personnes.
+Classe Etudiant :
+Hérite de Personne car un étudiant est une personne avec des caractéristiques supplémentaires.
+Classe Travailleur :
+Hérite aussi de Personne.
+Classe EtudiantTravailleur :
+Hérite à la fois de Etudiant et de Travailleur via l'héritage multipler.
+Classe Enseignant :
+Hérite de Travailleur car un enseignant est un travailleur qui a des responsabilités supplémentaires liées à l'enseignement.
+Classe EtudiantSportif :
+Hérite de Etudiant, car un étudiant peut aussi être un sportif.
+
+2. Où se situeront les champs suivants ?
+
+Champ	Classe(s) Concernée(s)
+salaire	Travailleur, EtudiantTravailleur, Enseignant
+emploiDuTemps = Etudiant, Enseignant
+anneeDEtude = Etudiant, EtudiantTravailleur, EtudiantSportif
+nom = Personne
+age = Personne
+sportPratique = EtudiantSportif
+Justification :
+salaire : Un salaire est propre aux classes Travailleur, EtudiantTravailleur.
+emploiDuTemps : Un emploi du temps est propre aux étudiants .
+anneeDEtude : Un étudiant a une année d'étude, donc ce champ appartient aux classes Etudiant.
+nom et age : Ces attributs sont communs à toutes les personnes.
+sportPratique : Ce champ est spécifique aux étudiants sportifs.
+    
